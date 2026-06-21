@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+
+        <nav>
+            <h1 class="logo">NETFLIX</h1>
+            <button>Sign In</button>
+        </nav>
+
+        <div class="content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h3>Starts at ₹149. Cancel anytime.</h3>
+            <p>
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <div class="email-box">
+                <input type="email" placeholder="Email address">
+                <button>Get Started ></button>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="movies">
+        <h2>Popular on Netflix</h2>
+
+        <div class="movie-row">
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWblCK2h-P4fDIPYb4brq_CmPbSZMGk63q44IgCIsjDg&s=10"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQujuytp_QzrTO2JTTDgp2v8_jtz8_JXCx7ev8MwoxiGw&s=10"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6dYX4p57Uuo4F0DR6XtCRp8qQ0BUOSJjv0goLgNwl4g&s"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6D8ZjJqNLe3ROyxj43msNzMWX5c6-qiLAzLuJYtk0fw&s=10"></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj6Azc-H8EpMq-6xhnbQ7UVv_lUW8_CYS8_fXQftlG6g&s=10"></div>
+        </div>
+    </section>
+
+</body>
+</html>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+.banner{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+    background-size:cover;
+    background-position:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    color:#e50914;
+    font-size:40px;
+    font-weight:bold;
+}
+
+nav button{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.content{
+    text-align:center;
+    margin-top:180px;
+}
+
+.content h1{
+    font-size:60px;
+    max-width:800px;
+    margin:auto;
+}
+
+.content h3{
+    margin:20px 0;
+    font-size:24px;
+}
+
+.content p{
+    margin-bottom:20px;
+}
+
+.email-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.email-box input{
+    width:350px;
+    padding:15px;
+    border:none;
+    border-radius:4px;
+}
+
+.email-box button{
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.movies{
+    padding:50px;
+}
+
+.movies h2{
+    margin-bottom:20px;
+}
+
+.movie-row{
+    display:flex;
+    gap:15px;
+}
+
+.card{
+    width:220px;
+    height:320px;
+    background:#333;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+    transition:0.3s;
+}
+.card img{
+    width: 220px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card:hover{
+    transform:scale(1.08);
+}
+</style>
