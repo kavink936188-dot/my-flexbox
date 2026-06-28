@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velocity Racing Team</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+VELOCITY
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Drivers</a></li>
+
+<li><a href="#">Cars</a></li>
+
+<li><a href="#">Gallery</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<button class="join">
+Join Team
+</button>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+WORLD'S FASTEST <span>RACING TEAM</span>
+</h1>
+
+<p>
+
+Speed. Power. Victory.
+
+</p>
+
+<a href="#" class="btn">
+
+Explore Now
+
+</a>
+
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>ABOUT US</h2>
+
+<p>
+
+Velocity Racing Team is one of the world's leading motorsport teams.
+We compete with cutting-edge technology, world-class drivers,
+and relentless passion to achieve victory.
+
+</p>
+
+</section>
+
+
+<section class="stats">
+
+<div class="card">
+
+<h1>15</h1>
+
+<p>Championships</p>
+
+</div>
+
+<div class="card">
+
+<h1>245</h1>
+
+<p>Race Wins</p>
+
+</div>
+
+<div class="card">
+
+<h1>500+</h1>
+
+<p>Grand Prix</p>
+
+</div>
+
+<div class="card">
+
+<h1>40</h1>
+
+<p>Drivers</p>
+
+</div>
+
+</section>
+
+
+<script src="projs.js"></script>
+
+</body>
+</html>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Poppins;
+background:#000;
+color:white;
+
+}
+
+header{
+
+position:fixed;
+width:100%;
+top:0;
+left:0;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+}
+
+.logo{
+
+font-size:30px;
+font-weight:900;
+font-family:Orbitron;
+color:red;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin:0 20px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+transition:.4s;
+
+}
+
+nav ul li a:hover{
+
+color:red;
+
+}
+
+.join{
+
+padding:12px 28px;
+background:red;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:30px;
+transition:.4s;
+
+}
+
+.join:hover{
+
+background:white;
+color:red;
+
+}
+
+.hero{
+
+height:100vh;
+
+background:url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+}
+
+.overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.6);
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:10;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-family:Orbitron;
+
+margin-bottom:20px;
+
+animation:slide 2s;
+
+}
+
+.hero span{
+
+color:red;
+
+}
+
+.hero p{
+
+font-size:25px;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+padding:15px 40px;
+
+background:red;
+
+text-decoration:none;
+
+color:white;
+
+border-radius:40px;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+color:red;
+
+}
+
+.about{
+
+padding:100px 10%;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-size:40px;
+
+margin-bottom:30px;
+
+color:red;
+
+}
+
+.about p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:35px;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+padding:100px 10%;
+
+}
+
+.card{
+
+background:#111;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.5s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:red;
+
+}
+
+.card h1{
+
+font-size:60px;
+
+}
+
+.card p{
+
+font-size:22px;
+
+}
+
+@keyframes slide{
+
+from{
+
+opacity:0;
+
+transform:translateY(100px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+margin:20px 0;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
+</style>
